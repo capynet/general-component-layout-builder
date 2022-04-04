@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+      window.drupalSettings = {};
+
+      window.drupalSettings.merlb = [
+        {
+          mountPoint: "#merlb-app",
+          layout: {
+            rows: [
+              {
+                cols: [
+                  {
+                    components: [],
+                  },
+                ],
+              },
+            ],
+          },
+          components: [
+            {
+              id: "slider-1",
+              label: "Slider hero",
+              preview:
+                "<h1>This is a preview for the slider</h1><p>In this case is just a text sample but in here you may put a simplified shape of the component of even an image.</p>",
+            },
+            {
+              id: "image-with-text-2",
+              label: "Image of people dancing with an intro",
+              preview:
+                "<h3>This is a preview for the text component</h3><p>In this case is just a text sample but in here you may put a simplified shape of the component of even an image.</p>",
+            },
+            {
+              id: "no-prev-comp",
+              label: "Desde JSON Component without preview.",
+              preview: "",
+            },
+          ],
+        },
+        {
+          mountPoint: "#merlb-app2",
+          layout: {
+            rows: [
+              {
+                cols: [
+                  {
+                    components: [],
+                  },
+                ],
+              },
+            ],
+          },
+          components: [
+            {
+              id: "slider-1",
+              label: "Slider hero",
+              preview:
+                "<h1>This is a preview for the slider</h1><p>In this case is just a text sample but in here you may put a simplified shape of the component of even an image.</p>",
+            },
+          ],
+        },
+      ];
+    </script>
+  </head>
+  <body>
+    <div id="merlb-app"></div>
+    <div id="merlb-app2"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
